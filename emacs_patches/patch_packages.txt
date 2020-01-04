@@ -1,0 +1,43 @@
+--- packages_original.el	2020-01-04 23:50:12.056714800 +0100
++++ packages_tc.el	2020-01-04 23:50:12.056714800 +0100
+@@ -17,7 +17,9 @@
+     cmake-mode
+     company
+     (company-c-headers :toggle (configuration-layer/package-usedp 'company))
++    (company-irony :requires company irony)
+     company-ycmd
++    irony
+     flycheck
+     gdb-mi
+     ggtags
+@@ -87,6 +89,12 @@
+     :defer t
+     :init (push 'company-c-headers company-backends-c-mode-common)))
+ 
++(defun c-c++/init-company-irony ()
++  (use-package company-irony
++    :if c-c++-enable-irony-support
++    :defer t
++    :init (push 'company-irony company-backends-c-mode-common)))
++
+ (defun c-c++/post-init-flycheck ()
+   (dolist (mode '(c-mode c++-mode))
+     (spacemacs/add-flycheck-hook mode))
+@@ -145,3 +153,17 @@
+     :post-init
+     (dolist (mode '(c-mode c++-mode))
+       (spacemacs/setup-helm-cscope mode))))
++
++(defun c-c++/init-irony ()
++  (use-package irony
++    :if c-c++-enable-irony-support
++    :init
++    (progn
++      (add-hook 'c++-mode-hook 'irony-mode)
++      (add-hook 'c-mode-hook 'irony-mode)
++      (add-hook 'objc-mode-hook 'irony-mode)
++
++      (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
++      (add-hook 'irony-mode-hook (lambda () (remove-hook 'completion-at-point-functions 'irony-completion-at-point t)) t)
++      (spacemacs|diminish irony-mode)
++      )))
