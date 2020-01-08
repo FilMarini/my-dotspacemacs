@@ -1,9 +1,0 @@
---- config_original.el	2020-01-04 23:50:12.056714800 +0100
-+++ config_tc.el	2020-01-04 23:50:12.056714800 +0100
-@@ -22,3 +22,6 @@
- 
- (defvar c-c++-default-mode-for-headers 'c-mode
-   "Default mode to open header files. Can be `c-mode' or `c++-mode'.")
-+
-+(defvar c-c++-enable-irony-support nil
-+  "If non nil Irony related packages and configuration are enabled.")
