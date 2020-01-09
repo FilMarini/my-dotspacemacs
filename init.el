@@ -326,10 +326,15 @@ you should place your code here."
   (defun clang-format-bindings ()
     (define-key c++-mode-map [C-tab] 'clang-format-buffer))
 
-  ;;load snippets every load
-  ;;(with-eval-after-load 'yasnippet
-  ;;  (yas-reload-all))
+  ;; Disable hl line in term
+  (add-hook 'term-mode-hook (lambda ()
+                              (setq-local global-hl-line-mode
+                                          nil)))
 
+  ;;set ROOT environment
+  ;; (load-file "/home/filippo/.spacemacs.d/load/source_file.el")
+  ;; (defun root6 ()
+    ;; (source "/home/filippo/root_v6.16.00/bin/thisroot.sh"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
