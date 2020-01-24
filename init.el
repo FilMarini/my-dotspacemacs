@@ -335,6 +335,14 @@ you should place your code here."
   ;; (load-file "/home/filippo/.spacemacs.d/load/source_file.el")
   ;; (defun root6 ()
     ;; (source "/home/filippo/root_v6.16.00/bin/thisroot.sh"))
+
+  ;; VHDL-Original-mode
+  (setq load-path (cons (expand-file-name "/home/filippo/.spacemacs.d/load/vhdl-mode") load-path))
+  (load-file "/home/filippo/.spacemacs.d/load/vhdl_mode.el")
+
+  ;;sr-speedbar
+  (load-file "/home/filippo/.spacemacs.d/load/sr-speedbar.el")
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
