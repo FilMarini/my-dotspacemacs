@@ -512,7 +512,41 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  ;; Show menu bar
+  (menu-bar-mode 1)
+
+  ;; VHDL-Original-mode
+  (setq load-path (cons (expand-file-name "~/.spacemacs.d/load/vhdl-mode") load-path))
+  (load-file "~/.spacemacs.d/load/vhdl_mode.el")
+
+  ;;sr-speedbar
+  (load-file "~/.spacemacs.d/load/sr-speedbar.el")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(vhdl-company-name "Universita' degli Studi di Padova")
+ '(user-full-name "Filippo Marini")
+ '(user-mail-address "filippo.marini@pd.infn.it")
+ '(vhdl-clock-edge-condition (quote function))
+ '(vhdl-company-name "INFN Padova")
+ '(vhdl-electric-mode t)
+ '(vhdl-reset-active-high t)
+ '(vhdl-stutter-mode t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)
