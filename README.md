@@ -7,7 +7,6 @@ To install the configuration file type
 
 Make sure there is no ~/.spacemacs file
 
-Dependencies:
+**Dependencies:**
 
-**Python Layer**
 To use the Python layer features install Python packages (*pip install*) listed in *requirements.txt*
