@@ -7,12 +7,7 @@ To install the configuration file type
 
 Make sure there is no ~/.spacemacs file
 
-* Some modifications are applied to the ~/.emacs.d folder as well (version 0.200.13). To apply those patches enter the emacs\_patches folder and run "make"
-
 Dependencies:
 
 **Python Layer**
-
-* *pip install importmagic epc* for importmagic feature
-* *pip install yapf* for buffer formatting
-* *pip install flake8* for syntax checking
+To use the Python layer features install Python packages (*pip install*) listed in *requirements.txt*

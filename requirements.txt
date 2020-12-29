@@ -1,0 +1,4 @@
+epc==0.0.5
+flake8==3.8.4
+importmagic==0.1.7
+yapf==0.30.0
