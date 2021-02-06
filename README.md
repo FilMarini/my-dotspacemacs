@@ -17,4 +17,4 @@ Make sure there is no ~/.spacemacs file
 
 * To use the Python layer features install Python packages listed in *requirements.txt* (*"pip install -r requirements.txt*")
 
-* To use Latex LSP, install texlab (*https://texlab.netlify.app/*)
+* To use Latex LSP, install texlab (<https://texlab.netlify.app/>)
