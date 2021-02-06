@@ -42,7 +42,8 @@ This function should only modify configuration layer settings."
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
-     latex
+     (latex :variables
+            latex-backend 'lsp)
      ;; git
      helm
      lsp
@@ -52,8 +53,10 @@ This function should only modify configuration layer settings."
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      ;; spell-checking
-     ;; syntax-checking
+     ;;(syntax-checking :variables
+     ;;                 flycheck-global-modes 'LaTeX-mode)
      ;; version-control
+     spell-checking
      treemacs)
 
 
