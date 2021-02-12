@@ -4,11 +4,11 @@ To install the configuration file type
 
 * SSH
 ```shell
-git clone git@github.com:thyeme/my_spacemacs_config.git ~/.spacemacs.d
+git clone git@github.com:FilMarini/my_spacemacs_config.git ~/.spacemacs.d
 ```
 * HTTPS 
 ```shell
-git clone https://github.com/thyeme/my_spacemacs_config.git ~/.spacemacs.d
+git clone https://github.com/FilMarini/my_spacemacs_config.git ~/.spacemacs.d
 ```
 
 Make sure there is no ~/.spacemacs file
