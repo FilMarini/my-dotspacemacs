@@ -11,7 +11,7 @@ git clone git@github.com:FilMarini/my_spacemacs_config.git ~/.spacemacs.d
 git clone https://github.com/FilMarini/my_spacemacs_config.git ~/.spacemacs.d
 ```
 
-Make sure there is no ~/.spacemacs file
+Make sure there is no `~/.spacemacs` file
 
 **Dependencies:**
 
