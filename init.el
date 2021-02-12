@@ -68,7 +68,7 @@ This function should only modify configuration layer settings."
    ;; `dotspacemacs/user-config'. To use a local version of a package, use the
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(sr-speedbar)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -523,8 +523,6 @@ before packages are loaded."
   (setq load-path (cons (expand-file-name "~/.spacemacs.d/load/vhdl-mode") load-path))
   (load-file "~/.spacemacs.d/load/vhdl_mode.el")
 
-  ;;sr-speedbar
-  (load-file "~/.spacemacs.d/load/sr-speedbar.el")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
