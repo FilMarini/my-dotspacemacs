@@ -518,11 +518,6 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   ;; Show menu bar
   (menu-bar-mode 1)
-
-  ;; VHDL-Original-mode
-  (setq load-path (cons (expand-file-name "~/.spacemacs.d/load/vhdl-mode") load-path))
-  (load-file "~/.spacemacs.d/load/vhdl_mode.el")
-
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
