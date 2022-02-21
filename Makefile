@@ -1,5 +1,5 @@
 spacemacs:
-	git clone -b develop --single-branch https://github.com/FilMarini/spacemacs ~/.emacs.d
+	git clone -b develop https://github.com/FilMarini/spacemacs ~/.emacs.d
 
 fonts:
 	source install_scp.sh
